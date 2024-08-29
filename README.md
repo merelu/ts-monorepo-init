@@ -1,1 +1,1 @@
-# msa-server-boilerplate
+# ts-monorepo-init
