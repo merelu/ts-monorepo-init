@@ -2975,6 +2975,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"default@workspace:packages/default":
+  version: 0.0.0-use.local
+  resolution: "default@workspace:packages/default"
+  dependencies:
+    "@types/node": "npm:^22.3.0"
+    jest: "npm:^29.7.0"
+    ts-jest: "npm:^29.2.4"
+    ts-node: "npm:^10.9.2"
+  languageName: unknown
+  linkType: soft
+
 "defaults@npm:^1.0.3":
   version: 1.0.4
   resolution: "defaults@npm:1.0.4"
@@ -5866,6 +5877,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nest@workspace:packages/nest":
+  version: 0.0.0-use.local
+  resolution: "nest@workspace:packages/nest"
+  dependencies:
+    "@nestjs/cli": "npm:^10.4.4"
+    "@nestjs/common": "npm:^10.0.0"
+    "@nestjs/core": "npm:^10.0.0"
+    "@nestjs/platform-express": "npm:^10.0.0"
+    "@nestjs/schematics": "npm:^10.1.4"
+    "@nestjs/testing": "npm:^10.4.1"
+    "@types/express": "npm:^4.17.17"
+    "@types/jest": "npm:^29.5.12"
+    "@types/node": "npm:^22.3.0"
+    "@types/source-map-support": "npm:^0"
+    "@types/supertest": "npm:^6.0.2"
+    jest: "npm:^29.7.0"
+    source-map-support: "npm:^0.5.21"
+    supertest: "npm:^7.0.0"
+    ts-jest: "npm:^29.2.4"
+    ts-loader: "npm:^9.4.3"
+    ts-node: "npm:^10.9.2"
+    tsconfig-paths: "npm:^4.2.0"
+  languageName: unknown
+  linkType: soft
+
 "node-abort-controller@npm:^3.0.1":
   version: 3.1.1
   resolution: "node-abort-controller@npm:3.1.1"
@@ -7206,31 +7242,6 @@ __metadata:
   checksum: 10c0/a5eca3eb50bc11552d453488344e6507156b9193efd7635e98e867fab275d527af53d8866e2370cd09dfe74378a18111622ace35af6a608e5223a7d27fe99537
   languageName: node
   linkType: hard
-
-"template@workspace:packages/template":
-  version: 0.0.0-use.local
-  resolution: "template@workspace:packages/template"
-  dependencies:
-    "@nestjs/cli": "npm:^10.4.4"
-    "@nestjs/common": "npm:^10.0.0"
-    "@nestjs/core": "npm:^10.0.0"
-    "@nestjs/platform-express": "npm:^10.0.0"
-    "@nestjs/schematics": "npm:^10.1.4"
-    "@nestjs/testing": "npm:^10.4.1"
-    "@types/express": "npm:^4.17.17"
-    "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^22.3.0"
-    "@types/source-map-support": "npm:^0"
-    "@types/supertest": "npm:^6.0.2"
-    jest: "npm:^29.7.0"
-    source-map-support: "npm:^0.5.21"
-    supertest: "npm:^7.0.0"
-    ts-jest: "npm:^29.2.4"
-    ts-loader: "npm:^9.4.3"
-    ts-node: "npm:^10.9.2"
-    tsconfig-paths: "npm:^4.2.0"
-  languageName: unknown
-  linkType: soft
 
 "terser-webpack-plugin@npm:^5.3.10":
   version: 5.3.10
