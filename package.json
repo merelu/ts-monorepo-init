@@ -4,18 +4,27 @@
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.1"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "concurrently": "^8.2.2",
-    "eslint": "^9.9.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "rm-build": "rm -rf packages/*/dist"
+    "rm-build": "rm -rf packages/*/dist",
+    "lint": "concurrently 'yarn lint:packages' 'yarn lint:spec'",
+    "lint:fix": "concurrently 'yarn lint:packages --fix' 'yarn lint:spec --fix'",
+    "lint:packages": "eslint 'packages/**/*.ts' --ignore-pattern 'packages/**/*.spec.ts'",
+    "lint:spec": "eslint 'packages/**/*.spec.ts'"
   }
 }
