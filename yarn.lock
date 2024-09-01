@@ -2975,9 +2975,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"default@workspace:packages/default":
+"default@workspace:packages/common":
   version: 0.0.0-use.local
-  resolution: "default@workspace:packages/default"
+  resolution: "default@workspace:packages/common"
   dependencies:
     "@types/node": "npm:^22.3.0"
     jest: "npm:^29.7.0"
