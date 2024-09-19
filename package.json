@@ -24,7 +24,7 @@
     "dev-api": "yarn build-libs && yarn workspace @apps/api start:dev",
     "build-api": "yarn build-libs && yarn workspace @apps/api build",
     "start-api": "yarn workspace @apps/api start",
-    "build-libs": "yarn workspaces foreach --include 'libs/*' --since run build",
+    "build-libs": "yarn workspaces foreach --include 'libs/*' --all run build",
     "rm-build": "concurrently 'rm -rf libs/**/dist' 'rm -rf apps/**/dist'",
     "rm-cov": "rm -rf ./**/coverage",
     "lint": "concurrently 'yarn lint:packages' 'yarn lint:spec'",
